@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+/* FARVER VARIABLER */
+:root {
+    --offwhite: #e4e4e4;
+    --white: #ffffff;
+    --red: #950505;
+    --darkred: #690f0f; 
+    --black: #00000;
+    --grey: #24262b;   
+}
+
+/* NAVBAR */
+
+
+
+nav{
+    background: var(--grey);
+    
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    float: left;
+    line-height: 30px;
+    padding-left: 60px;
+    width: 10%;
+    margin-top: 2%;
+    padding-bottom: 1%;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    margin-top: 3%;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    background: var(--grey);
+    margin: 0 15px;
+    border-radius: 2px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 15px;
+    padding: 8px 2px;
+    text-align: left;
+}
+nav ul li a:hover{
+    color: var(--red);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--red),
+                0 0 5px var(--darkred);
+
+
+}
+nav ul ul li a:hover{
+    color: var(--red);
+    box-shadow: none;
+    
+}
+nav ul ul{
+    position: absolute;
+    border-top: 3px solid var(--red);
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    display: none;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 170px;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3) ;
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.fa-plus{
+    margin-left: 40px;
+    font-size: 15px;
+}
+.show,.burgermenu,input{
+    display: none;
+}
+
+/* RESPONSIV NAVBAR - TABLET OG MOBIL*/
+
+@media all and (max-width: 968px){
+    nav ul{
+        margin-right: 0px;
+        float: left;
+    }
+    nav .logo{
+        padding-left: 30px;
+        width: 20%;
+        margin-top: 5%;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul ul li{
+        position: static;
+    }
+    nav ul ul li{
+        border-bottom: 0px;
+    }
+    nav ul ul a{
+        padding-left: 40px;
+    }
+    nav ul ul ul a{
+        padding-left: 80px;
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: var(--red);
+
+    }
+    .burgermenu{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+        margin-top: 5%;
+    }
+    nav ul a:hover{
+        box-shadow: none;
+    }
+    .show + a,ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+
+    }
+}

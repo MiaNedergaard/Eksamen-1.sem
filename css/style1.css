@@ -1,0 +1,905 @@
+
+/* HER STYLES MENUPUNKTERNE: OM JOLLY, SJOV MED JOLLY OG KONTAKT*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 175%;
+}
+
+
+/* FARVER VARIABLER */
+:root {
+    --offwhite: #e4e4e4;
+    --white: #ffffff;
+    --red: #950505;
+    --darkred: #690f0f; 
+    --black: #000000;
+    --grey: #24262b;   
+}
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+/* OM JOLLY - UNDERSIDE omjolly.html */
+
+.om-content{
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    max-width: 80%;
+    gap: 125px;
+    color: var(--offwhite);
+}
+
+.om-content1{
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    max-width: 80%;
+    gap: 125px;
+    color: var(--red);
+}
+
+.om-content-header1 h3{
+    display: flex;
+    font-size: 4rem;
+    max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: var(--black);
+    
+}
+
+.om-content-header h3{
+    display: flex;
+    font-size: 4rem;
+    max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: var(--offwhite);
+    
+}
+
+.om-billede img{
+    max-width: 475px;
+    max-height: 475px;
+    border-radius: 2px;
+}
+
+.om-billede1 img{
+    max-width: 40vw;
+    max-height: 40vw;
+    margin-top: 10%;
+
+}
+
+.om-tekst{
+    font-size: 1.4rem;
+    color: var(--offwhite);
+    margin-bottom: 5%;
+}
+
+.om-tekst1{
+    font-size: 1.2rem;
+    color: var(--black);
+    margin-bottom: 5%;
+}
+
+.om-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: var(--black);
+}
+
+.om-wrap1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: var(--offwhite);
+    
+}
+
+.omjolly-section{
+    background-color: var(--red);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgba(128, 10, 10, 0.438));
+}
+
+.logo-billede img{
+    display: flex;
+    height: 15%;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 10%;
+    padding: 10px 30px;
+    flex-wrap: nowrap;
+}
+
+
+.omjolly-tekst{
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    color: var(--offwhite);
+    margin-bottom: 5%;
+    margin: 5%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid var(--offwhite);
+}
+
+/* SJOV MED JOLLY - UNDERSIDE sjovmedjolly.html*/
+
+.tilmeld-button{
+    display: inline-block;
+    flex-wrap: nowrap;
+    margin: 30px 30px;
+    font-size: 1rem;
+}
+
+.sjov-content{
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    max-width: 80%;
+    gap: 125px;
+    color: var(--offwhite);
+}
+
+.sjov-content ol li{
+    list-style-type: disc;
+}
+
+.sjov-content1{
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    max-width: 80%;
+    gap: 125px;
+}
+
+.sjov-content-header1 h3{
+    display: flex;
+    font-size: 2.8rem;
+    max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: var(--offwhite);
+    
+}
+
+.sjov-content-header h3{
+    display: flex;
+    font-size: 3.5rem;
+    max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: var(--offwhite);
+}
+
+.sjov-billede img{
+    max-width: 475px;
+    max-height: 475px;
+    border-radius: 2px;
+}
+
+.sjov-tekst{
+    font-size: 1.2rem;
+    color: var(--offwhite);
+    margin-bottom: 5%;
+}
+
+.sjov-tekst1{
+    font-size: 1.1rem;
+    color: var(--offwhite);
+}
+
+.sjov-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-image: linear-gradient(black,darkred,black);
+}
+
+.sjov-wrap1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-image: linear-gradient(black,darkred, black);
+}
+
+/* KONTAKT - UNDERSIDE kontakt.html*/
+
+
+.contact{
+   
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--offwhite);
+}
+
+.contact-content{
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    max-width: 80%;
+    gap: 125px;
+    color: var(--black);
+    margin-left: 17%;
+}
+
+.contact-header h3{
+    display: flex;
+    font-size: 4rem;
+    max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    color: var(--black);
+}
+
+.contact-header p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    color: var(--black);
+   
+}
+
+.contactinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform{
+    padding: 10px 100px;
+    background-color: white;
+    border-radius: 2px;
+    
+    margin: 50px 70px;
+}
+
+.contactform h3{
+    font-size: 30px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 20px;
+
+}
+
+.contactform .inputbox textarea{
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid var(--red);
+    outline: none;
+}
+
+.contact-button{
+    white-space: nowrap;
+    width: 100px;
+    display: inline;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 8px;
+    font-size: 1.1em;
+    background: var(--red);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+
+.instagram-embed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7rem;
+    text-align: center;
+    background-image: linear-gradient(darkred, black);
+    
+}
+
+.insta-embed-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 75px;
+}
+
+.instagram-embed h3{
+    font-family: 'poppins', sans-serif;
+    color: var(--offwhite);
+    font-size: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* RESPONSIV - MOBIL */
+
+@media screen and (max-width: 600px) {
+    /* OM JOLLY - MOBIL */
+
+    .button{
+        padding: 10px 10px;
+        margin-left: 30%;
+    }
+
+    .om-header{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .om-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .om-wrap1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .om-header h2{
+        text-align: center;
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 3rem;
+    }
+    
+    .om-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+    
+    .om-content1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+    
+    .om-billede img{
+        max-height: 300px;
+    }
+
+    .om-billede1 img{
+        max-height: 90vw;
+        max-width: 90vw;
+    }
+    
+    .om-content-header{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    
+    .om-content-header1{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    
+    .om-content-header h3{
+        font-size: 2rem;
+    }
+    
+    .om-content-header1 h3{
+        font-size: 2rem;
+    }
+    
+    .om-tekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    
+    .om-tekst1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .omjolly-tekst{
+        font-size: 1rem;
+    }
+
+    .logo-billede img{
+        display: none;
+    }
+
+
+    /* SJOV MED JOLLY - MOBIL*/
+    .button{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 30px;
+        margin-left: 20%;
+    }
+    
+    .sjov-header{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .sjov-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .sjov-header h3{
+        text-align: center;
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 3rem;
+    }
+    
+    .sjov-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+    
+    .sjov-content1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+    
+    .sjov-billede img{
+        max-height: 300px;
+    }
+    
+    .sjov-content-header{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    
+    .sjov-content-header1{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    
+    .sjov-content-header h3{
+        font-size: 2rem;
+    }
+    
+    .sjov-content-header1 h3{
+        font-size: 2rem;
+    }
+    
+    .sjov-tekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sjov-tekst ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    
+    .sjov-tekst1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* KONTAKT - MOBIL */
+    
+    .contact-button{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+        margin-left: 10%;
+        margin: 10px 10px;
+    }
+    
+    
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-header h3{
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 2.8rem;
+    }
+
+    .contact-header p{
+        font-size: 1.2rem;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+
+    .contactinfo{
+        margin-top: 5%;
+    }
+
+
+    .contactform{
+        padding: 10px 90px;
+        margin: 20px 40px;
+        margin-left: 50%;
+    }
+    
+    .contactform h3{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .contactform .inputbox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 20px;
+    
+    }
+    
+    .contactform .inputbox textarea{
+        width: 200%;
+        font-size: 16px;
+        display: block;
+        float: right;
+        padding-top: 10px;
+        margin-bottom: 20%;
+    }
+
+    .instagram-embed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .insta-embed-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .instagram-embed h3{
+        font-size: 2.4rem;
+       
+    }
+}
+
+/* RESPONSIV - TABLET */
+
+@media only screen and (max-width: 900px) {
+    /* OM JOLLY - TABLET*/
+
+    .button{
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .om-header{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .om-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .om-header h2{
+        text-align: center;
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .om-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    .om-content1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    .om-billede img{
+        max-height: 300px;
+    }
+
+    .om-content-header{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .om-content-header1{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .om-content-header h3{
+        font-size: 3rem;
+    }
+
+    .om-content-header1 h3{
+        font-size: 3rem;
+    }
+
+    .om-tekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .om-tekst1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    /* SJOV MED JOLLY - TABLET*/
+
+    .button{
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 22%;
+
+    }
+
+    .sjov-header{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .sjov-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sjov-header h2{
+        text-align: center;
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .sjov-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    .sjov-content1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    .sjov-billede img{
+        max-height: 300px;
+    }
+
+    .sjov-content-header{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .sjov-content-header1{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .sjov-content-header h3{
+        font-size: 3rem;
+    }
+
+    .sjov-content-header1 h3{
+        font-size: 3rem;
+    }
+
+    .sjov-tekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sjov-tekst1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sjov-tekst ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    /* KONTAKT - TABLET*/
+
+    .contact-button{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+        margin-left: 10%;
+        margin: 10px 10px;
+    }
+    
+    
+    .contact-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12%;
+    }
+    
+    .contact-header h3{
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 2.8rem;
+    }
+
+    .contact-header p{
+        font-size: 1.2rem;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+
+    .contactinfo{
+        margin-top: 5%;
+    }
+
+
+    .contactform{
+        padding: 10px 90px;
+        margin: 20px 40px;
+    }
+    
+    
+    .contactform .inputbox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 20px;
+    
+    }
+    
+    .contactform .inputbox textarea{
+        width: 200%;
+        font-size: 16px;
+        display: block;
+        float: right;
+        margin-bottom: 20%;
+    }
+
+    .instagram-embed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .insta-embed-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

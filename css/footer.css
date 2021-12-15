@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FARVER VARIABLER */
+:root {
+    --offwhite: #e4e4e4;
+    --white: #ffffff;
+    --red: #950505;
+    --darkred: #690f0f; 
+    --black: #00000;
+    --grey: #24262b;
+    --overskrift: 'ITC Grouch', serif;
+    --h2size: 4rem;
+    --h3size: 1.3rem;
+    --psize: 1rem;    
+}
+
+/* FOOTER */
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: var(--grey);
+    padding: 70px 0;
+}
+.footer-logo{
+    width: 75%;
+    margin-right: 20%;
+    color: white;
+    text-align: center;
+}
+
+.footer-tekst{
+    width: 25%;
+    padding: 0 80px;
+    color: white;
+}
+.footer-tekst h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-tekst h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--red);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-tekst ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-tekst ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--offwhite);
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-tekst ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+.footer-tekst .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-tekst .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
+/* RESPONSIV FOOTER TABLET*/
+@media (max-width: 767px){
+    .footer-logo{
+        width: 25%;
+        margin-right: 20%;
+        color: white;
+        text-align: center;
+    }
+    .footer-tekst{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+/*RESPONSIV FOOTER MOBIL*/
+@media (max-width: 574px){
+    .footer-logo{
+        width: 25%;
+        margin-right: 20%;
+        color: white;
+        text-align: center;
+    }
+    .footer-tekst{
+        width: 100%;
+    }
+    
+}
