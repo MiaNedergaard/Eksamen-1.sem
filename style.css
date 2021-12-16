@@ -1,0 +1,614 @@
+
+/* HER STYLES MENUPUNKTERNE: FORSIDE, DRIKKEVARER*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 175%;
+}
+
+
+/* FARVER VARIABLER */
+:root {
+    --offwhite: #e4e4e4;
+    --white: #ffffff;
+    --red: #950505;
+    --darkred: #690f0f; 
+    --black: #000000;
+    --grey: #24262b;   
+}
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    overflow-x: hidden;
+    background-color: var(--black);
+}
+/* LANDINGPAGE VIDEO */
+
+
+#landingpage-video {
+    object-fit: cover;
+    height: auto;
+    max-width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* LANDINGPAGE - index.html */
+
+.imagesection{
+    background-image: linear-gradient(black,rgb(1, 2, 31),darkred,#24262b);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 6% 2%;
+}
+
+.imagemenu{
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.imagemenu ::after{
+    clear: both;
+}
+
+.imagemenu ::after, .imagemenu::before{
+    content: '';
+    display: table;
+}
+
+.imagemenu li{
+    width: 528px;
+    height: 528px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.menu-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.menu-box:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.jolly-img1{
+    background-image:linear-gradient(to bottom, rgba(128, 10, 10, 0.986), rgba(0, 0, 0, 0.79)), url(../images/vestfyen.jpg);
+    padding-left: 12%;
+    padding-top: 25%;
+
+}
+
+.jolly-img2{
+    background-image:linear-gradient(to bottom, rgba(128, 10, 10, 0.986), rgba(0, 0, 0, 0.769)), url(../images/tekstur.jpg);
+    padding-top: 20%;
+
+}
+
+.jolly-img3{
+    background-image:linear-gradient(to bottom, rgba(128, 10, 10, 0.438), rgba(0, 0, 0, 0.632)), url(../images/tekstursort.jpg);
+    padding-top: 25%;
+
+}
+
+.jolly-img4{
+    background-image:linear-gradient(to bottom, rgba(128, 10, 10, 0.596), rgba(0, 0, 0, 0.959)), url(../images/rødtekstur.png);
+    padding: 15%;
+    padding-top: 25%;
+
+}
+
+.menu-box h2{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 42px;
+    margin: 0 100px;
+    padding: 100px 0 0 0;
+    line-height: 1.5;
+    
+}
+
+
+/* VORES DRIKKEVARER - UNDERSIDE voresdrikkevarer.html */
+
+
+.drink-section img{
+    max-height: 800px;
+}
+
+.drink-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.drink-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 7rem;
+    padding-top: 5rem;
+    background-color: var(--offwhite);
+}
+
+.drink-header h2{
+    font-family: 'poppins', sans-serif;
+    font-size: 4rem;
+}
+
+.drink-header p{
+    display: flex;
+    text-align: center;
+    font-size: 1.4rem;
+    justify-content: center;
+    max-width: 45rem;
+    padding-top: 1rem;
+    margin-bottom: 40px;
+}
+
+.button{
+    white-space: nowrap;
+    width: 150px;
+    display: inline;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    background: var(--red);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.drink-content{
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    max-width: 80%;
+    gap: 125px;
+    color: var(--offwhite);
+    margin-right: 10%;
+}
+
+.drink-content1 {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'poppins', sans-serif;
+    max-width: 80%;
+    gap: 125px; 
+    color: black;
+    margin-left: 10%;
+}
+
+.drink-content-header h3{
+    display: flex;
+    font-size: 4rem;
+    max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: var(--offwhite);
+    
+}
+
+.drink-billede img{
+    max-width: 45vw;
+    max-height: 45vw;
+    border-radius: 2px;
+}
+
+.drink-tekst{
+    font-size: 1.3rem;
+    color: var(--offwhite);
+}
+
+.drink-tekst1{
+    font-size: 1.3rem;
+    color: black;
+}
+
+.drink-content-header1 h3{
+    display: flex;
+    font-size: 4rem;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    padding-bottom: 4rem;
+    color: black;
+}
+
+.drink-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    
+}
+
+.drink-wrap1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#cola{
+    background-image: linear-gradient(black,darkred,black);
+}
+
+#orange{
+    background-image: linear-gradient(black,#f5c982,orange,black);
+   
+}
+
+#zero{
+    background-image: linear-gradient(black,darkred,rgb(7, 61, 207),black);
+}
+
+#sport{
+    background-image: linear-gradient(black,#60e9a5,#00fff2,black);
+    font-size: 1.4rem;
+}
+
+#lemon{
+    background-image: linear-gradient(black,#fff375,#fff375,#60e9a5, black);
+}
+
+#exotic{
+    background-image: linear-gradient(black,#9fff75,pink,black);
+}
+
+/* RESPONSIV MOBIL */
+
+@media screen and (max-width: 600px) {
+    
+    /* LANDINGPAGE - MOBIL */
+
+    .imagemenu li{
+        width: 328px;
+        height: 328px;
+        
+    }
+
+    .menu-box h2{
+        font-size: 1.5rem;
+    }
+
+    .jolly-img1{
+       padding: 2px;
+       padding-top: 25px;
+       padding-left: 10px;
+    }
+
+    .jolly-img2{
+        padding: 40px 1px;
+    }
+
+    .jolly-img3{
+        padding: 20px 10px;
+    }
+
+    .jolly-img4{
+        padding: 20px;
+        padding-top: 55px;
+    }
+
+   
+
+    /*  VORES DRIKKEVARER - MOBIL */
+
+    .button{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 15px;
+        margin-left: 20%;
+    }
+    
+    .drink-header{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .drink-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .drink-header h2{
+        text-align: center;
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .drink-header p{
+        font-size: 1rem;
+    }
+    
+    .drink-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+        margin-right: 2%;
+    }
+    
+    .drink-content1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+        margin-left: 2%;
+    }
+    
+    .drink-billede img{
+        max-width: 75vw;
+        max-height: 75vw;
+       
+    }
+    
+    .drink-content-header{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .drink-content-header1{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .drink-content-header h3{
+        font-size: 1.5rem;
+    }
+    
+    .drink-content-header1 h3{
+        font-size: 1.5rem;
+    }
+    
+    .drink-tekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    
+    .drink-tekst1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    #sport h4{
+        font-size: 1rem;
+    }
+
+    #sport p{
+        font-size: 1rem;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    /* VORES DRIKKEVARER - TABLET*/
+
+    .button{
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drink-header{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .drink-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .drink-header h2{
+        text-align: center;
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .drink-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+        margin-right: 2%;
+    }
+
+    .drink-content1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+        margin-left: 2%;
+    }
+
+    .drink-billede img{
+        max-height: 90vw;
+        max-width: 90vw;
+    }
+
+    .drink-content-header{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .drink-content-header1{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .drink-content-header h3{
+        font-size: 2rem;
+    }
+
+    .drink-content-header1 h3{
+        font-size: 2rem;
+    }
+
+    .drink-tekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .drink-tekst1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    /* VORES DRIKKEVARER - TABLET*/
+
+    .button{
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 22%;
+
+    }
+
+    .drink-header{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .drink-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .drink-header h2{
+        text-align: center;
+        line-height: 120%;
+        padding-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .drink-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    .drink-content1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    .drink-billede img{
+        max-height: 300px;
+    }
+
+    .drink-content-header{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .drink-content-header1{
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .drink-content-header h3{
+        font-size: 3rem;
+    }
+
+    .drink-content-header1 h3{
+        font-size: 3rem;
+    }
+
+    .drink-tekst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .drink-tekst1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
